@@ -5,7 +5,7 @@ import { Avatar } from "@mui/material";
 function SidebarRow({ src, Icon, title }) {
   return (
     <div className="sidebarRow">
-      {src && <Avatar src={src} />}
+      {src && <Avatar sx={{ width: 56, height: 56 }} src={src} />}
       {Icon && <Icon />}
       <h4>{title}</h4>
     </div>

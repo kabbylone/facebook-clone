@@ -5,7 +5,11 @@ import { Avatar } from "@mui/material";
 function Story({ image, profileSrc, title }) {
   return (
     <div style={{ backgroundImage: `url(${image})` }} className="story">
-      <Avatar className="story__avatar" src={profileSrc} />
+      <Avatar
+        sx={{ width: 56, height: 56 }}
+        className="story__avatar"
+        src={profileSrc}
+      />
       <h4>{title}</h4>
     </div>
   );
