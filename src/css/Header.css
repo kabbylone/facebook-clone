@@ -68,9 +68,16 @@
 }
 
 .header__info > h4 {
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .header__right {
   display: flex;
+}
+
+.header__edge {
+  padding: 5px;
+  background-color: rgb(235, 234, 234);
+  border-radius: 50%;
 }

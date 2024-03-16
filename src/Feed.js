@@ -1,4 +1,4 @@
-import "./Feed.css";
+import "./css/Feed.css";
 import React from "react";
 import StoryReel from "./StoryReel.js";
 import MessageSender from "./MessageSender.js";
@@ -20,18 +20,22 @@ function Feed() {
         image={`${process.env.PUBLIC_URL}/moto_gp.png`}
       />
       <Post
-        profilePic={`${process.env.PUBLIC_URL}/profile_pic.jpg`}
-        message={"This works!"}
+        profilePic={`${process.env.PUBLIC_URL}/profile_pic_4.jpg`}
+        message={
+          "Captivated by the timeless elegance of India Gate, a symbol of pride and patriotism"
+        }
         timestamp={"Timestamp"}
-        username={"Kabbier Bali Nag"}
-        image={`${process.env.PUBLIC_URL}/moto_gp.png`}
+        username={"Andrea Piacquadio"}
+        image={`${process.env.PUBLIC_URL}/india_gate.jpg`}
       />
       <Post
-        profilePic={`${process.env.PUBLIC_URL}/profile_pic.jpg`}
-        message={"This works!"}
+        profilePic={`${process.env.PUBLIC_URL}/profile_pic_1.jpg`}
+        message={
+          "Embracing innovation and collaboration at our corporate headquarters, where ideas meet excellence."
+        }
         timestamp={"Timestamp"}
-        username={"Kabbier Bali Nag"}
-        image={`${process.env.PUBLIC_URL}/moto_gp.png`}
+        username={"Mi Ziao"}
+        image={`${process.env.PUBLIC_URL}/corporate-office.jpg`}
       />
     </div>
   );

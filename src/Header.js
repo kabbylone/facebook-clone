@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./css/Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
 import FlagIcon from "@mui/icons-material/Flag";
@@ -11,8 +11,10 @@ import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="header">
       <div className="header__left">
@@ -46,24 +48,24 @@ function Header() {
 
       <div className="header__right">
         <div className="header__info">
-          <Avatar />
-          <h4>Kabbier</h4>
+          <Avatar src={user.photoURL} />
+          <h4>{user.displayName}</h4>
         </div>
 
         <IconButton>
-          <AddIcon />
+          <AddIcon className="header__edge" />
         </IconButton>
 
         <IconButton>
-          <ForumIcon />
+          <ForumIcon className="header__edge" />
         </IconButton>
 
         <IconButton>
-          <NotificationsActiveIcon />
+          <NotificationsActiveIcon className="header__edge" />
         </IconButton>
 
         <IconButton>
-          <ExpandMoreIcon />
+          <ExpandMoreIcon className="header__edge" />
         </IconButton>
       </div>
     </div>

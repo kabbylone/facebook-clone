@@ -5,7 +5,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
 }
 
@@ -17,7 +17,6 @@
 .sidebarRow > h4 {
   margin-left: 20px;
   font-weight: 600;
-  font-size: large;
 }
 
 .sidebarRow > .MuiSvgIcon-root {

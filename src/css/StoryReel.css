@@ -1,0 +1,26 @@
+.storyReel__story {
+  display: flex;
+}
+
+.storyReel__arrow {
+  display: flex;
+  position: absolute;
+  right: 430px;
+  top: 190px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+
+.storyReel__arrow:hover {
+  background-color: lightgray;
+  transform: scale(1.07);
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Post.css";
+import "./css/Post.css";
 import { Avatar } from "@mui/material";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline";
@@ -11,11 +11,7 @@ function Post({ profilePic, image, username, timestamp, message }) {
   return (
     <div className="post">
       <div className="post__top">
-        <Avatar
-          sx={{ width: 56, height: 56 }}
-          src={profilePic}
-          className="post__avatar"
-        />
+        <Avatar src={profilePic} className="post__avatar" />
         <div className="post__topInfo">
           <h3>{username}</h3>
           <p>Timestamp...</p>

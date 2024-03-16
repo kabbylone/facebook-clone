@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+import "./css/Sidebar.css";
 import SidebarRow from "./SidebarRow";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import EmojiFlagsIcon from "@mui/icons-material/EmojiFlags";
@@ -8,14 +8,14 @@ import ChatIcon from "@mui/icons-material/Chat";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="sidebar">
-      <SidebarRow
-        src={`${process.env.PUBLIC_URL}/profile_pic.jpg`}
-        title="Kabbier Bali Nag"
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="Covid-19 Information Center"
